@@ -1,3 +1,4 @@
+//SPDX-License-Identifier: MIT
 /*
 Joint Savings Account
 ---------------------
@@ -15,7 +16,7 @@ You will do the following:
 
 */
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.17;
 
 // Define a new contract named `JointSavings`
 contract JointSavings {
@@ -26,7 +27,11 @@ contract JointSavings {
     - A variable of type `address public` named `lastToWithdraw`
     - Two variables of type `uint public` named `lastWithdrawAmount` and `contractBalance`.
     */
-    // YOUR CODE HERE!
+    address payable accountOne; 
+    address payable accountTwo;
+    address public lastToWithdraw;
+    uint public lastWithdrawAmount;
+    uint public contractBalance;
 
     /*
     Define a function named **withdraw** that will accept two arguments.
